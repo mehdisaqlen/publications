@@ -1,5 +1,5 @@
 /* Reset some default browser styles */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,400&display=swap");
 html {
   box-sizing: border-box;
   font-size: 18px;
@@ -39,7 +39,6 @@ details {
   border: 0.2px solid #e2e8f0;
   border-radius: 8px;
   position: relative;
-  /* width: 500px; */
 }
 details .summary-title {
   user-select: none;
@@ -56,7 +55,7 @@ details .summary-content {
 }
 details .summary-content p {
   font-size: 15px !important;
-  font-weight: 900;
+  font-weight: 500;
   line-height: 0.5cm;
   color: black;
   margin-bottom: 10px;
@@ -88,4 +87,10 @@ details .summary-chevron-down svg {
 }
 details summary::-webkit-details-marker {
   display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
 }
